@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* https://giphy.com/gifs/kawaii-robot-ghost-3o6EhXOmIjkmorLMqY */
+	background: url('./assets/ghost-robot.gif');
+	background-position: center;
+	font-family: 'Comfortaa', cursive;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.header-container {
+	margin-top: 2rem;
+}
+
+h1 {
+	padding: 1rem;
+	/* padding-top: 2rem; */
+	text-align: center;
+	margin: 0 auto;
+	width: max-content;
+	font-weight: 700;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border-radius: 10px;
+	cursor: default;
+}
+
+.container {
+	height: calc(100vh - 68px);
+	width: 100vw;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-blur {
+	min-width: 70%;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border-radius: 10px;
+}
+
+.categories,
+.flags,
+.joke-type {
+	font-size: 1.5rem;
+	padding: 1rem;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	vertical-align: middle;
+	width: 30%;
+	font-weight: 700;
+
+	display: flex;
+	align-items: center;
+}
+
+.input-container {
+	padding: 0.5rem 0;
+	margin-left: 1rem;
+}
+
+input[type="checkbox"] {
+	width: 15px;
+	height: 15px;
+}
+
+.categories-input,
+.flags-input,
+.joke-type-input {
+	width: 70%;
+	font-weight: 300;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+label,
+input {
+	cursor: pointer;
+}
+
+button {
+	margin-top: 2rem;
+	padding: 1rem;
+	border-radius: 10px;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+button:hover {
+	filter: brightness(95%);
+}
+
+button:active {
+	transform: translateY(2px);
+}

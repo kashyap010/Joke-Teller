@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Teller</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>Joke Teller</h1>
+    </div>
+    
+    <div class="container">
+        <div class="container-blur">
+            <div class="categories">
+                <span class="title" data-type="categories">Categories</span>
+                <div class="categories-input">
+                    <div class="input-container">
+                        <input type="checkbox" name="programming" id="programming" value="programming" checked> 
+                        <label for="programming">Programming</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" name="dark" id="dark" value="dark"> 
+                        <label for="dark">Dark</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" name="spooky" id="spooky" value="spooky"> 
+                        <label for="spooky">Spooky</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" name="misc" id="misc" value="miscellaneous">  
+                        <label for="misc">Misc</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flags">
+                <span class="title" data-type="blacklistFlags">Blacklist Flags</span>
+                <div class="flags-input">
+                    <div class="input-container">
+                        <input type="checkbox" name="nsfw" id="nsfw" value="nsfw"> 
+                        <label for="nsfw">NSFW</label>
+                    </div>
+                    
+                    <div class="input-container">
+                        <input type="checkbox" name="political" id="political" value="political"> 
+                        <label for="political">Political</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" name="sexist" id="religious" value="religious"> 
+                        <label for="religious">Religious</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" name="racist" id="racist" value="racist"> 
+                        <label for="racist">Racist</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="joke-type">
+                <span class="title" data-type="jokeType">Joke Type</span>
+                <div class="joke-type-input">
+                    <div class="input-container">
+                        <input type="checkbox" name="single" id="single" value="single" checked> 
+                        <label for="single">Single</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="checkbox" name="twopart" id="twopart" value="twopart"> 
+                        <label for="twopart">Two-part</label>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <button id="tell-joke">Say the joke!</button>
+    </div>
+
+    <audio id="audio" hidden></audio>
+    
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+single => joke
+two-part => setup, delivery
+-->
+
