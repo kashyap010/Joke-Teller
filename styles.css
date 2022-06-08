@@ -22,7 +22,6 @@ body {
 
 h1 {
 	padding: 1rem;
-	/* padding-top: 2rem; */
 	text-align: center;
 	margin: 0 auto;
 	width: max-content;
@@ -46,7 +45,7 @@ h1 {
 }
 
 .container-blur {
-	min-width: 70%;
+	min-width: 60%;
 	background: rgba(255, 255, 255, 0.1);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(2px);
@@ -86,12 +85,50 @@ input[type="checkbox"] {
 .categories-input,
 .flags-input,
 .joke-type-input {
+	padding: 0 .5rem;
 	width: 70%;
 	font-weight: 300;
 
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+@media screen and (max-width: 769px) {
+	.container {
+		height: calc(100vh - 150px);
+	}
+
+	.container-blur {
+		width: max-content;
+		max-width: 90%;
+	}
+
+	.categories,
+	.flags,
+	.joke-type {
+		padding: 0.5rem 1rem;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.title {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.categories-input,
+	.flags-input,
+	.joke-type-input {
+		width: max-content;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.categories-input {
+		grid-template-columns: 32% 70%;
+	}
 }
 
 label,

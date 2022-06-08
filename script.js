@@ -26,7 +26,7 @@ function buildUrl(jokeParams) {
 	let baseUrl = 'https://v2.jokeapi.dev/joke/';
 
 	//categories
-	if (jokeParams['categories'].length == 0) baseUrl += 'programming,dark,spooky,miscellaneous?';
+	if (jokeParams['categories'].length == 0) baseUrl += 'programming,dark,pun,miscellaneous?';
 	else if (jokeParams['categories'].length == 1) baseUrl += `${jokeParams['categories'][0]}?`;
 	else {
 		jokeParams['categories'].forEach((category) => (baseUrl += `${category},`));
